@@ -1,0 +1,91 @@
+{
+    "Marketing": [
+        {
+            "id": "1",
+            "email": "alice@example.com",
+            "name": "Alice Johnson",
+            "department": "Marketing",
+            "hours_worked": "160",
+            "salary": "50",
+            "payload": 8000.0
+        },
+        {
+            "id": "102",
+            "email": "henry@example.com",
+            "name": "Henry Martin",
+            "department": "Marketing",
+            "hours_worked": "150",
+            "salary": "35",
+            "payload": 5250.0
+        }
+    ],
+    "Design": [
+        {
+            "id": "2",
+            "email": "bob@example.com",
+            "name": "Bob Smith",
+            "department": "Design",
+            "hours_worked": "150",
+            "salary": "40",
+            "payload": 6000.0
+        },
+        {
+            "id": "3",
+            "email": "carol@example.com",
+            "name": "Carol Williams",
+            "department": "Design",
+            "hours_worked": "170",
+            "salary": "6",
+            "payload": 1020.0
+        }
+    ],
+    "HR": [
+        {
+            "id": "101",
+            "email": "grace@example.com",
+            "name": "Grace Lee",
+            "department": "HR",
+            "hours_worked": "160",
+            "salary": "45",
+            "payload": 7200.0
+        },
+        {
+            "id": "103",
+            "email": "ivy@example.com",
+            "name": "Ivy Clark",
+            "department": "HR",
+            "hours_worked": "158",
+            "salary": "38",
+            "payload": 6004.0
+        },
+        {
+            "id": "202",
+            "email": "liam@example.com",
+            "name": "Liam Harris",
+            "department": "HR",
+            "hours_worked": "155",
+            "salary": "42",
+            "payload": 6510.0
+        }
+    ],
+    "Sales": [
+        {
+            "id": "201",
+            "email": "karen@example.com",
+            "name": "Karen White",
+            "department": "Sales",
+            "hours_worked": "165",
+            "salary": "50",
+            "payload": 8250.0
+        },
+        {
+            "id": "203",
+            "email": "mia@example.com",
+            "name": "Mia Young",
+            "department": "Sales",
+            "hours_worked": "160",
+            "salary": "37",
+            "payload": 5920.0
+        }
+    ]
+}
