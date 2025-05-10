@@ -40,8 +40,8 @@
         }
     ],
     "HR": [
-        {
-            "id": "101",
+
+        {   "id": "101",
             "email": "grace@example.com",
             "name": "Grace Lee",
             "department": "HR",
