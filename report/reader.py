@@ -103,7 +103,6 @@ class Reporter:
         Returns:
             Словарь с данными по отделам
         """
-        print(self.file_names)
         for file_name in self.file_names:
             file_path_csv = os.path.join(self.path_csv_dir, file_name)
             file_path_csv = os.path.normpath(file_path_csv)
@@ -130,7 +129,7 @@ class Reporter:
             self.add_fields = table_fields
 
         for dept, employees in self.load_data().items():
-            if self.type_report == 'payload':
+            if self.type_report == 'payout':
                 for employ in employees:
                     report_for_one_employ = {key: value for key, value in employ.items()
                                              if key in self.base_fields}

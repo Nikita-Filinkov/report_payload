@@ -19,7 +19,7 @@ class ArgparseStart:
             '--report',
             '--report',
             type=str,
-            default='payload',
+            default='payout',
             help='type report'
         )
         parser.add_argument(
@@ -45,7 +45,7 @@ class ArgparseCheck:
         self.script_dir = script_dir
         self.correct_filenames = []
         self.incorrect_filenames = []
-        self.type_report = 'payload'
+        self.type_report = 'payout'
         self.norm_path_csv = None
 
     def get_path_for_csv(self):
