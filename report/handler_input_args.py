@@ -14,7 +14,9 @@ class ArgparseStart:
     def get_args(self):
         parser = argparse.ArgumentParser(description='Create report')
         parser.add_argument('input_files', nargs='*', help='Input CSV files')
+        parser.add_argument('--fields', nargs='*', help='Expand base report fields')
         parser.add_argument(
+            '--report',
             '--report',
             type=str,
             default='payload',
@@ -47,10 +49,15 @@ class ArgparseCheck:
         self.norm_path_csv = None
 
     def get_path_for_csv(self):
-        if not self.args.path:
-            self.norm_path_csv = self.args.path
+        if self.args.path:
+
+            if not os.path.isabs(self.args.path):
+                self.norm_path_csv = os.path.join(self.script_dir, self.args.path)
+            else:
+                self.norm_path_csv = self.args.path
         else:
             self.norm_path_csv = os.path.join(self.script_dir, 'csv_files')
+
         if os.path.isdir(self.norm_path_csv):
             return self.norm_path_csv
         raise DirectoryNotFound(
@@ -59,7 +66,6 @@ class ArgparseCheck:
         )
 
     def get_filenames(self):
-        self.correct_filenames.clear()
         self.norm_path_csv = self.get_path_for_csv()
         tree_dir = os.walk(self.norm_path_csv)
         csv_files: list = tuple(tree_dir)[-1][-1]
